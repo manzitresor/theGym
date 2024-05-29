@@ -11,3 +11,15 @@ const output = extractWordsAndNumbers(input);
 // console.log(output);
 output: [  "Hello",123, "World", 456, 49, "Another", 789] // Expected output
 ```
+
+## Question II
+
+<p>
+   Write a function that takes an object as input and returns a new object with all the key-value pairs reversed (keys become values and values become keys)
+</p>
+```sh
+    const originalObj = {aa: "1", bf: "3", cq: "5"};
+    const reversedObj = reverseObject(originalObj);
+    // console.log(reversedObj); 
+    output: {"1": 'aa', "3": 'bf', "5": 'cq'} // Expected output
+```

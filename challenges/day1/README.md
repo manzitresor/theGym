@@ -14,3 +14,15 @@ var fives = factory(5);       // returns a function - fives
 var myArray = [1, 2, 3];
 fives(myArray);               //returns [5, 10, 15];
 ```
+
+## Invert values
+
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+### Example
+```sh
+[1, 2, 3, 4, 5] --> [-1, -2, -3, -4, -5]
+[1, -2, 3, -4, 5] --> [-1, 2, -3, 4, -5]
+[] --> []
+```
+

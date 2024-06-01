@@ -43,4 +43,5 @@ const array2 = [
 
 // console.log(deepEqualArrays(array1, array2));
 output: true
+
 ```

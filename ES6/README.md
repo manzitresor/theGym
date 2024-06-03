@@ -30,6 +30,7 @@ output: [  "Hello",123, "World", 456, 49, "Another", 789] // Expected output
 <p>
    Create a function that performs a deep comparison between two arrays of objects, checking for equality of nested properties.
 </p>
+
 ```sh
 const array1 = [
     { id: 1, name: "Alice", details: { age: 30, city: "New York" } },
@@ -44,4 +45,36 @@ const array2 = [
 // console.log(deepEqualArrays(array1, array2));
 output: true
 
+```
+
+### Question V
+
+Create a function that performs a pivot operation, on an array of objects, converting it from long to wide format based on specified keys.
+
+```sh 
+const longFormatData = [
+    { id: 1, name: "Alice", age: 30 },
+    { id: 2, name: "Bob", age: 25 },
+    { id: 3, name: "Charlie", age: 35 }
+];
+const keys = ["id", "name"];
+// const wideFormatData = pivotLongToWide(longFormatData, keys);
+// console.log(wideFormatData);
+output: {
+  id: [ 1, 2, 3 ],
+  name: [ 'Alice', 'Bob', 'Charlie' ]
+}
+..................................................................................
+const longFormatData = [
+    { id: 1, lastName: "Dany", age: 30 },
+    { id: 2, lastName: "Josue", age: 25 },
+    { id: 3, lastName: "Noella", age: 35 }
+];
+const keys = ["id", "lastName"];
+// const wideFormatData = pivotLongToWide(longFormatData, keys);
+// console.log(wideFormatData);
+output: {
+  id: [ 1, 2, 3 ],
+  lastName: [ 'Dany', 'Josue', 'Noella' ]
+}
 ```

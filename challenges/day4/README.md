@@ -14,3 +14,22 @@ Jack really likes his number five: the trick here is that you have to multiply e
   0 -->     0  (  0 * 5¹)
  -3 -->   -15  ( -3 * 5¹)
 ```
+
+## String Reordering
+
+The input will be an array of dictionaries.
+
+Return the values as a string-seperated sentence in the order of their keys' integer equivalent (increasing order).
+
+The keys are not reoccurring and their range is -999 < key < 999. The dictionaries' keys & values will always be strings and will always not be empty.
+
+```sh 
+Input:
+List = [
+        {'4': 'dog' }, {'2': 'took'}, {'3': 'his'},
+        {'-2': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}
+       ]
+
+Output:
+'Vatsan took his dog for a spin'
+```

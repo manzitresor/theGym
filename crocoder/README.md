@@ -9,3 +9,11 @@ The outcome (resolve or reject) should be determined by a random condition, ensu
 Input a number, double it, increase it by 10, and then multiply by 3.
 
 Each operation should be in a separate Promise and then chained together.
+
+## Challenge 3
+
+Using fetchSimulator simulate fetching data from three different URLs in parallel.
+
+Each "fetch" will be represented by a Promise that resolves after a delay taken from the delays array.
+
+Use Promise.all to wait for all these Promises to resolve and then process the results.

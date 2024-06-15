@@ -17,3 +17,20 @@ Using fetchSimulator simulate fetching data from three different URLs in paralle
 Each "fetch" will be represented by a Promise that resolves after a delay taken from the delays array.
 
 Use Promise.all to wait for all these Promises to resolve and then process the results.
+
+
+## Challenge 4
+
+Using fetchSimulator simulate fetching data from three different URLs with a twist.
+
+Each "fetch" will be represented by a Promise that resolves after a delay taken from the delays array.
+
+Use Promise.race to get the fastest response!
+
+## challenge 5
+
+Create a Promise that simulates a data fetching operation with a delay. Introduce a cancellation token that can be used to cancel the Promise before it resolves.
+
+If the operation is cancelled, the Promise should reject with a "Cancelled" message; otherwise, it should resolve normally.
+
+Cancel it!

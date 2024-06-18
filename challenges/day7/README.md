@@ -7,3 +7,14 @@ Write a program where Alex can input (n) how many times the hoop goes round and 
   If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
   If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 ```
+
+## Isograms
+
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+### Example: (Input --> Output)
+```sh
+"Dermatoglyphics" --> true
+"aba" --> false
+"moOse" --> false (ignore letter case)
+```

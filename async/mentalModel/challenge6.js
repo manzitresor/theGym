@@ -16,12 +16,18 @@ async function getCountry(name) {
 
 async function fetchWeather() {
     const countries = await getCountry('rwanda');
-    const lon = countries[0].latlng[1]
-    const lat = countries[0].latlng[0]
-    const fetchWeather = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lon}&longitude=${lat}&current_weather=true.`);
+    const lon = countries[0].latlng[1];
+    const lat = countries[0].latlng[0];
+    const country = countries[0].name.common;
+    const city = countries[0].capital;
+    console.log(`COUNRTY: ${country}`);
+    console.log(`CAPITAL: ${city}`);
+
+    const fetchWeather = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
     const resp  = await fetchWeather.json();
     const data = await resp;
-    console.log(data);
+    const temp = data.current_weather.temperature;
+    console.log(`TEMPERATURE: ${temp}°C`);
 }
 
 fetchWeather();

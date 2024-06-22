@@ -9,6 +9,7 @@ function myFetch(api) {
                 reject(`Failed to fetch Status: ${request.status}`);
             }
         }
+        
         request.send();
     })
 }

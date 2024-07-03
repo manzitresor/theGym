@@ -9,7 +9,7 @@ function fetchData(url,retries) {
                         attemptFetch(attempt + 1)
                         console.log(`Failed on the ${attempt+1} attempt`)
                     } else {
-                        resolve('Failed to fetch');
+                        reject('Failed to fetch'+error);
                     }
                 })
         }

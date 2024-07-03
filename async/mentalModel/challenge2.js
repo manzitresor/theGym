@@ -6,8 +6,9 @@ const apiUrls = [
   ];
 
   function fetchMultipleAPIs(apiUrls) {
-    let fetchData = apiUrls.map((api) => {
-        return fetch(api).then((response) => response.json())
+    let fetchData = apiUrls.map(async (api) => {
+        const response = await fetch(api);
+        return await response.json();
     })
     return Promise.all(fetchData)
   }

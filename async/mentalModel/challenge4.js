@@ -1,16 +1,16 @@
 function myFetch(api) {
-    const request = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     return new Promise((resolve,reject)=>{
-        request.open('GET',api)
-        request.onload = function() {
-            if(request.status >= 200 && request.status < 300) {
-                resolve(request.responseText);
+        xhr.open('GET',api)
+        xhr.onload = function() {
+            if(xhr.status >= 200 && xhr.status < 300) {
+                resolve(xhr.responseText);
             }else {
-                reject(`Failed to fetch Status: ${request.status}`);
+                reject(`Failed to fetch Status: ${xhr.status}`);
             }
         }
         
-        request.send();
+       xhr.send();
     })
 }
 
